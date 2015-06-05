@@ -10,6 +10,8 @@ https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartph
 
 * 'README.md'
 
+* 'run_analysis.R': R script that generates both the datasets and the codebooks
+
 * 'mainDataset.txt': text file containing the main dataset
 
 * 'mainCodebook.md': codebook for 'mainDataset.txt'
@@ -17,3 +19,8 @@ https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartph
 * 'secondaryDataset.txt': text file containing the secondary dataset
 
 * 'secondaryCodebook.md': codebook for 'mainDataset.txt'
+
+## How it works
+
+Put the script 'run_analysis.R' in the root folder of the dataset (https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and run it. 
+The script loads the files and generates two tidy datasets and two codebooks. 
