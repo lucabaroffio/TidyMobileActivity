@@ -197,4 +197,86 @@ for (i in 1:length(vec)) {
 }
 close(fileConn)
  
-write.table(x = dataset, file = "mainDataset.txt", row.name = FALSE) 
+write.table(x = dataset, file = "mainDataset.txt", row.name = FALSE)
+
+
+activity.agg = aggregate(dataset[, 1:66], list(dataset$activity), mean)
+subject.agg = aggregate(dataset[, 1:66], list(dataset$subj), mean)
+
+subject.agg$subj = subject.agg$Group.1
+subject.agg$Group.1 = NULL
+
+activity.agg$activity = activity.agg$Group.1
+activity.agg$Group.1 = NULL
+
+dataset.2 = rbind.fill(subject.agg, activity.agg)
+
+# codebook for the secondary dataset
+
+vec = character(66)
+
+for (i in 1:length(mean.sigs)) {
+  vec[mean.sigs[i]] = "Average mean value of"
+  # append(vec[mean.sigs[i]], "mean value")
+}
+
+for (i in 1:length(std.sigs)) {
+  vec[std.sigs[i]] = "Average standard deviation of"
+  # append(vec[mean.sigs[i]], "mean value")
+}
+
+for (i in 1:66) {
+  vec[i] = paste(vec[i], sigName[i])
+}
+sigName
+vec
+
+for (i in 1:length(time.dom.sigs)) {
+  vec[time.dom.sigs[i]] = paste(vec[time.dom.sigs[i]], "in the time domain")
+}
+
+for (i in 1:length(freq.dom.sigs)) {
+  vec[freq.dom.sigs[i]] = paste(vec[freq.dom.sigs[i]], "in the frequency domain (DFT)")
+}
+
+for (i in 1:length(X.sigs)) {
+  vec[X.sigs[i]] = paste(vec[X.sigs[i]], "along the X axis.")
+}
+
+for (i in 1:length(Y.sigs)) {
+  vec[Y.sigs[i]] = paste(vec[Y.sigs[i]], "along the Y axis.")
+}
+
+for (i in 1:length(Z.sigs)) {
+  vec[Z.sigs[i]] = paste(vec[Z.sigs[i]], "along the Z axis.")
+}
+
+vec[67] = "subject that performed the acquisition task"
+vec
+
+vec = append(vec, "Ground truth activity. \n \n Levels: \n \n")
+vec
+vec[68] = paste(vec[68], paste(levels(dataset$activity), collapse = ", "))
+vec
+
+names(dataset.2[, -(67:68)]) = sub(x = names(dataset.2[, -(67:68)]), pattern = "-mean\\(\\)", replacement = ".Mean")
+names(dataset.2[, -(67:68)]) = sub(x = names(dataset.2[, -(67:68)]), pattern = "-std\\(\\)", replacement = ".Std")
+names(dataset.2[, -(67:68)]) = sub(x = names(dataset.2[, -(67:68)]), pattern = "-", replacement = ".")
+names(dataset.2[, -(67:68)]) = paste("Ave.", names(dataset.2[, -(67:68)]), sep = "")
+lol = paste("Ave.", names(dataset.2[, -(67:68)]), sep = "")
+names(dataset.2) = c(lol, names(dataset.2[, 67:68]))
+names(dataset.2)
+
+fileConn = file("secondaryCodebook.md")
+writeLines("# Codebook for the tidy mobile activity dataset - Secondary dataset. \n## Features: \n \n", fileConn)
+for (i in 1:length(vec)) {
+  cat(paste("###", names(dataset.2)[i][1], ": \n"), file = "secondaryCodebook.md", append = TRUE)
+  cat(paste("    ", vec[i][1], " \n \n \n"), file = "secondaryCodebook.md", append = TRUE)
+}
+close(fileConn)
+
+write.table(x = dataset.2, file = "secondaryDataset.txt", row.name = FALSE)
+
+
+
+
