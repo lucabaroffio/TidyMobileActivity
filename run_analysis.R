@@ -186,11 +186,11 @@ names(dataset) = sub(x = names(dataset), pattern = "-", replacement = ".")
 names(dataset)
 
 
-fileConn = file("codebook.md")
+fileConn = file("mainCodebook.md")
 writeLines("# Codebook for the tidy mobile activity dataset. \n## Features: \n \n", fileConn)
 for (i in 1:68) {
-  cat(paste("###", names(dataset)[i][1], ": \n"), file = "codebook.md", append = TRUE)
-  cat(paste("    ", vec[i][1], " \n \n \n"), file = "codebook.md", append = TRUE)
+  cat(paste("###", names(dataset)[i][1], ": \n"), file = "mainCodebook.md", append = TRUE)
+  cat(paste("    ", vec[i][1], " \n \n \n"), file = "mainCodebook.md", append = TRUE)
 }
 close(fileConn)
  
