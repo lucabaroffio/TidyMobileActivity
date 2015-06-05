@@ -178,10 +178,10 @@ vec[68] = "Set that the sample belongs to: 'train', 'test'"
 vec
 
 fileConn = file("codebook.md")
-writeLines("# Codebook for the tidy mobile activity dataset. \n ## Features: \n \n", fileConn)
+writeLines("# Codebook for the tidy mobile activity dataset. \n## Features: \n \n", fileConn)
 for (i in 1:68) {
   cat(paste("###", names(dataset)[i][1], ": \n"), file = "codebook.md", append = TRUE)
-  cat(paste("    ", vec[i][1], " \n \n \n "), file = "codebook.md", append = TRUE)
+  cat(paste("    ", vec[i][1], " \n \n \n"), file = "codebook.md", append = TRUE)
 }
 close(fileConn)
  
