@@ -274,6 +274,10 @@
  LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS  
  
  
+### subj : 
+     subject that performed the acquisition task  
+ 
+ 
 ### set : 
      Set that the sample belongs to: 'train', 'test'  
  

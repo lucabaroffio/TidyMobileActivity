@@ -39,7 +39,7 @@ library(plyr)
 train.Y$activity = mapvalues(train.Y$activity, from = c("1", "2", "3", "4", "5", "6"), to = activities$V2)
 
 # get subjects
-train.subj = read.csv("train/subject_train.txt", header = FALSE, sep = "")
+train.Y$subj = read.csv("train/subject_train.txt", header = FALSE, sep = "")$V1
 
 # merge labels
 train = cbind(train.X, train.Y)
@@ -83,7 +83,7 @@ library(plyr)
 test.Y$activity = mapvalues(test.Y$activity, from = c("1", "2", "3", "4", "5", "6"), to = activities$V2)
 
 # get subjects
-test.subj = read.csv("test/subject_test.txt", header = FALSE, sep = "")
+test.Y$subj = read.csv("test/subject_test.txt", header = FALSE, sep = "")$V1
 
 test = cbind(test.X, test.Y)
 
@@ -177,7 +177,10 @@ vec
 vec[67] = paste(vec[67], paste(levels(dataset$activity), collapse = ", "))
 vec
 
-vec[68] = "Set that the sample belongs to: 'train', 'test'"
+vec[68] = "subject that performed the acquisition task"
+vec
+
+vec[69] = "Set that the sample belongs to: 'train', 'test'"
 vec
 
 names(dataset) = sub(x = names(dataset), pattern = "-mean\\(\\)", replacement = ".Mean")
@@ -188,7 +191,7 @@ names(dataset)
 
 fileConn = file("mainCodebook.md")
 writeLines("# Codebook for the tidy mobile activity dataset. \n## Features: \n \n", fileConn)
-for (i in 1:68) {
+for (i in 1:length(vec)) {
   cat(paste("###", names(dataset)[i][1], ": \n"), file = "mainCodebook.md", append = TRUE)
   cat(paste("    ", vec[i][1], " \n \n \n"), file = "mainCodebook.md", append = TRUE)
 }
