@@ -144,6 +144,7 @@ for (i in 1:length(std.sigs)) {
 for (i in 1:66) {
   vec[i] = paste(vec[i], sigName[i])
 }
+sigName
 vec
 
 for (i in 1:length(time.dom.sigs)) {
@@ -166,6 +167,8 @@ for (i in 1:length(Z.sigs)) {
   vec[Z.sigs[i]] = paste(vec[Z.sigs[i]], "along the Z axis.")
 }
 
+dataset$activity = as.factor(dataset$activity)
+
 vec
 names(dataset)
 paste(levels(dataset$activity), collapse = " \n ")
@@ -177,6 +180,12 @@ vec
 vec[68] = "Set that the sample belongs to: 'train', 'test'"
 vec
 
+names(dataset) = sub(x = names(dataset), pattern = "-mean\\(\\)", replacement = ".Mean")
+names(dataset) = sub(x = names(dataset), pattern = "-std\\(\\)", replacement = ".Std")
+names(dataset) = sub(x = names(dataset), pattern = "-", replacement = ".")
+names(dataset)
+
+
 fileConn = file("codebook.md")
 writeLines("# Codebook for the tidy mobile activity dataset. \n## Features: \n \n", fileConn)
 for (i in 1:68) {
@@ -185,4 +194,4 @@ for (i in 1:68) {
 }
 close(fileConn)
  
-
+write.table(x = dataset, file = "mainDataset.txt", row.name = FALSE) 

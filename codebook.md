@@ -2,272 +2,272 @@
 ## Features: 
  
 
-### tBodyAcc-mean()-X : 
+### tBodyAcc.Mean.X : 
      mean value of BodyAcc in the time domain along the X axis.  
  
  
-### tBodyAcc-mean()-Y : 
+### tBodyAcc.Mean.Y : 
      mean value of BodyAcc in the time domain along the Y axis.  
  
  
-### tBodyAcc-mean()-Z : 
+### tBodyAcc.Mean.Z : 
      mean value of BodyAcc in the time domain along the Z axis.  
  
  
-### tBodyAcc-std()-X : 
+### tBodyAcc.Std.X : 
      standard deviation of BodyAcc in the time domain along the X axis.  
  
  
-### tBodyAcc-std()-Y : 
+### tBodyAcc.Std.Y : 
      standard deviation of BodyAcc in the time domain along the Y axis.  
  
  
-### tBodyAcc-std()-Z : 
+### tBodyAcc.Std.Z : 
      standard deviation of BodyAcc in the time domain along the Z axis.  
  
  
-### tGravityAcc-mean()-X : 
+### tGravityAcc.Mean.X : 
      mean value of GravityAcc in the time domain along the X axis.  
  
  
-### tGravityAcc-mean()-Y : 
+### tGravityAcc.Mean.Y : 
      mean value of GravityAcc in the time domain along the Y axis.  
  
  
-### tGravityAcc-mean()-Z : 
+### tGravityAcc.Mean.Z : 
      mean value of GravityAcc in the time domain along the Z axis.  
  
  
-### tGravityAcc-std()-X : 
+### tGravityAcc.Std.X : 
      standard deviation of GravityAcc in the time domain along the X axis.  
  
  
-### tGravityAcc-std()-Y : 
+### tGravityAcc.Std.Y : 
      standard deviation of GravityAcc in the time domain along the Y axis.  
  
  
-### tGravityAcc-std()-Z : 
+### tGravityAcc.Std.Z : 
      standard deviation of GravityAcc in the time domain along the Z axis.  
  
  
-### tBodyAccJerk-mean()-X : 
+### tBodyAccJerk.Mean.X : 
      mean value of BodyAccJerk in the time domain along the X axis.  
  
  
-### tBodyAccJerk-mean()-Y : 
+### tBodyAccJerk.Mean.Y : 
      mean value of BodyAccJerk in the time domain along the Y axis.  
  
  
-### tBodyAccJerk-mean()-Z : 
+### tBodyAccJerk.Mean.Z : 
      mean value of BodyAccJerk in the time domain along the Z axis.  
  
  
-### tBodyAccJerk-std()-X : 
+### tBodyAccJerk.Std.X : 
      standard deviation of BodyAccJerk in the time domain along the X axis.  
  
  
-### tBodyAccJerk-std()-Y : 
+### tBodyAccJerk.Std.Y : 
      standard deviation of BodyAccJerk in the time domain along the Y axis.  
  
  
-### tBodyAccJerk-std()-Z : 
+### tBodyAccJerk.Std.Z : 
      standard deviation of BodyAccJerk in the time domain along the Z axis.  
  
  
-### tBodyGyro-mean()-X : 
+### tBodyGyro.Mean.X : 
      mean value of BodyGyro in the time domain along the X axis.  
  
  
-### tBodyGyro-mean()-Y : 
+### tBodyGyro.Mean.Y : 
      mean value of BodyGyro in the time domain along the Y axis.  
  
  
-### tBodyGyro-mean()-Z : 
+### tBodyGyro.Mean.Z : 
      mean value of BodyGyro in the time domain along the Z axis.  
  
  
-### tBodyGyro-std()-X : 
+### tBodyGyro.Std.X : 
      standard deviation of BodyGyro in the time domain along the X axis.  
  
  
-### tBodyGyro-std()-Y : 
+### tBodyGyro.Std.Y : 
      standard deviation of BodyGyro in the time domain along the Y axis.  
  
  
-### tBodyGyro-std()-Z : 
+### tBodyGyro.Std.Z : 
      standard deviation of BodyGyro in the time domain along the Z axis.  
  
  
-### tBodyGyroJerk-mean()-X : 
+### tBodyGyroJerk.Mean.X : 
      mean value of BodyGyroJerk in the time domain along the X axis.  
  
  
-### tBodyGyroJerk-mean()-Y : 
+### tBodyGyroJerk.Mean.Y : 
      mean value of BodyGyroJerk in the time domain along the Y axis.  
  
  
-### tBodyGyroJerk-mean()-Z : 
+### tBodyGyroJerk.Mean.Z : 
      mean value of BodyGyroJerk in the time domain along the Z axis.  
  
  
-### tBodyGyroJerk-std()-X : 
+### tBodyGyroJerk.Std.X : 
      standard deviation of BodyGyroJerk in the time domain along the X axis.  
  
  
-### tBodyGyroJerk-std()-Y : 
+### tBodyGyroJerk.Std.Y : 
      standard deviation of BodyGyroJerk in the time domain along the Y axis.  
  
  
-### tBodyGyroJerk-std()-Z : 
+### tBodyGyroJerk.Std.Z : 
      standard deviation of BodyGyroJerk in the time domain along the Z axis.  
  
  
-### tBodyAccMag-mean() : 
+### tBodyAccMag.Mean : 
      mean value of BodyAccMag in the time domain  
  
  
-### tBodyAccMag-std() : 
+### tBodyAccMag.Std : 
      standard deviation of BodyAccMag in the time domain  
  
  
-### tGravityAccMag-mean() : 
+### tGravityAccMag.Mean : 
      mean value of GravityAccMag in the time domain  
  
  
-### tGravityAccMag-std() : 
+### tGravityAccMag.Std : 
      standard deviation of GravityAccMag in the time domain  
  
  
-### tBodyAccJerkMag-mean() : 
+### tBodyAccJerkMag.Mean : 
      mean value of BodyAccJerkMag in the time domain  
  
  
-### tBodyAccJerkMag-std() : 
+### tBodyAccJerkMag.Std : 
      standard deviation of BodyAccJerkMag in the time domain  
  
  
-### tBodyGyroMag-mean() : 
+### tBodyGyroMag.Mean : 
      mean value of BodyGyroMag in the time domain  
  
  
-### tBodyGyroMag-std() : 
+### tBodyGyroMag.Std : 
      standard deviation of BodyGyroMag in the time domain  
  
  
-### tBodyGyroJerkMag-mean() : 
+### tBodyGyroJerkMag.Mean : 
      mean value of BodyGyroJerkMag in the time domain  
  
  
-### tBodyGyroJerkMag-std() : 
+### tBodyGyroJerkMag.Std : 
      standard deviation of BodyGyroJerkMag in the time domain  
  
  
-### fBodyAcc-mean()-X : 
+### fBodyAcc.Mean.X : 
      mean value of BodyAcc in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyAcc-mean()-Y : 
+### fBodyAcc.Mean.Y : 
      mean value of BodyAcc in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyAcc-mean()-Z : 
+### fBodyAcc.Mean.Z : 
      mean value of BodyAcc in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyAcc-std()-X : 
+### fBodyAcc.Std.X : 
      standard deviation of BodyAcc in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyAcc-std()-Y : 
+### fBodyAcc.Std.Y : 
      standard deviation of BodyAcc in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyAcc-std()-Z : 
+### fBodyAcc.Std.Z : 
      standard deviation of BodyAcc in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyAccJerk-mean()-X : 
+### fBodyAccJerk.Mean.X : 
      mean value of BodyAccJerk in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyAccJerk-mean()-Y : 
+### fBodyAccJerk.Mean.Y : 
      mean value of BodyAccJerk in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyAccJerk-mean()-Z : 
+### fBodyAccJerk.Mean.Z : 
      mean value of BodyAccJerk in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyAccJerk-std()-X : 
+### fBodyAccJerk.Std.X : 
      standard deviation of BodyAccJerk in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyAccJerk-std()-Y : 
+### fBodyAccJerk.Std.Y : 
      standard deviation of BodyAccJerk in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyAccJerk-std()-Z : 
+### fBodyAccJerk.Std.Z : 
      standard deviation of BodyAccJerk in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyGyro-mean()-X : 
+### fBodyGyro.Mean.X : 
      mean value of BodyGyro in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyGyro-mean()-Y : 
+### fBodyGyro.Mean.Y : 
      mean value of BodyGyro in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyGyro-mean()-Z : 
+### fBodyGyro.Mean.Z : 
      mean value of BodyGyro in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyGyro-std()-X : 
+### fBodyGyro.Std.X : 
      standard deviation of BodyGyro in the frequency domain (DFT) along the X axis.  
  
  
-### fBodyGyro-std()-Y : 
+### fBodyGyro.Std.Y : 
      standard deviation of BodyGyro in the frequency domain (DFT) along the Y axis.  
  
  
-### fBodyGyro-std()-Z : 
+### fBodyGyro.Std.Z : 
      standard deviation of BodyGyro in the frequency domain (DFT) along the Z axis.  
  
  
-### fBodyAccMag-mean() : 
+### fBodyAccMag.Mean : 
      mean value of BodyAccMag in the frequency domain (DFT)  
  
  
-### fBodyAccMag-std() : 
+### fBodyAccMag.Std : 
      standard deviation of BodyAccMag in the frequency domain (DFT)  
  
  
-### fBodyBodyAccJerkMag-mean() : 
+### fBodyBodyAccJerkMag.Mean : 
      mean value of BodyBodyAccJerkMag in the frequency domain (DFT)  
  
  
-### fBodyBodyAccJerkMag-std() : 
+### fBodyBodyAccJerkMag.Std : 
      standard deviation of BodyBodyAccJerkMag in the frequency domain (DFT)  
  
  
-### fBodyBodyGyroMag-mean() : 
+### fBodyBodyGyroMag.Mean : 
      mean value of BodyBodyGyroMag in the frequency domain (DFT)  
  
  
-### fBodyBodyGyroMag-std() : 
+### fBodyBodyGyroMag.Std : 
      standard deviation of BodyBodyGyroMag in the frequency domain (DFT)  
  
  
-### fBodyBodyGyroJerkMag-mean() : 
+### fBodyBodyGyroJerkMag.Mean : 
      mean value of BodyBodyGyroJerkMag in the frequency domain (DFT)  
  
  
-### fBodyBodyGyroJerkMag-std() : 
+### fBodyBodyGyroJerkMag.Std : 
      standard deviation of BodyBodyGyroJerkMag in the frequency domain (DFT)  
  
  
 ### activity : 
-     Ground truth activity: 
+     Ground truth activity. 
  
  Levels: 
  
@@ -275,6 +275,6 @@
  
  
 ### set : 
-     Set that the sample belongs to: train, test  
+     Set that the sample belongs to: 'train', 'test'  
  
  
